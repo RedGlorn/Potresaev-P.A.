@@ -50,6 +50,7 @@ def cl5(_i=[0]):
         scrtxt5.delete (1.33,END)
         scrtxt5.insert(INSERT, _i[0]-1)
         _i[0]=0
+    txt5.delete(0,END)
 
 
 def cl6():
@@ -70,6 +71,7 @@ def cl6():
         scrtxt6_2.delete(0,'end')
         scrtxt6_1.insert(0,"0")
         scrtxt6_2.insert(0,"0")
+    txt6.delete(0,END)
 
 def cl7():
     pred = int(scrtxt7_1.get())
@@ -89,7 +91,8 @@ def cl7():
         scrtxt7_1.delete(0,'end')
         scrtxt7_2.delete(0,'end')
         scrtxt7_1.insert(0,"0")
-        scrtxt7_2.insert(0,"0")        
+        scrtxt7_2.insert(0,"0")    
+    txt7.delete(0,END)  
 
 def cl8():
     n = int(txt8.get())
@@ -119,6 +122,7 @@ def cl8():
         scrtxt8_2.insert(0,"0")
         scrtxt8_3.delete (0,'end')
         scrtxt8_3.insert (0,'0')   
+    txt8.delete(0,END)
 
 
 window = Tk()
