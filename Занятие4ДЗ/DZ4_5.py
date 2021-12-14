@@ -1,9 +1,9 @@
 #-- coding: utf-8 --
-s = 'Строка f содержащая f'
-def str(s):
-	if s.count('f') == 1:
-		print(s.find('f'))
-	elif s.count('f') >= 2:
-		print(s.find('f'), s.rfind('f'))
+ctrok = 'Строка f содержащая f'
+def str(ctrok):
+	if ctrok.count('f') == 1:
+		print(ctrok.find('f'))
+	elif ctrok.count('f') >= 2:
+		print(ctrok.find('f'), ctrok.rfind('f'))
 
-str(s)
+str(ctrok)

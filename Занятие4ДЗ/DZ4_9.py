@@ -1,9 +1,9 @@
 #-- coding: utf-8 --
-s = input('Введите строку ')
-sim = input('Введите символ который надо удалить ')
+ctrok = input('Введите строку ')
+simb = input('Введите символ который надо удалить ')
 
-def str(s):
-    a = s.replace(sim, '')
+def str(ctrok):
+    a = ctrok.replace(simb, '')
     print(a)
 
-str(s)
+str(ctrok)

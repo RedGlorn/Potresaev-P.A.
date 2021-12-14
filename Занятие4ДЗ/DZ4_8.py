@@ -1,9 +1,9 @@
 #-- coding: utf-8 --
-s = 'строка h с буквой h между h'	
-def str(s):
-    ab = s[:s.find('h')]
-    b = s[s.find('h'): s.rfind('h')]
-    c = s[s.rfind('h') + 1:]
-    print(ab + b[::-1] + c)
+ctrok = 'строка h с буквой h между h'	
+def str(ctrok):
+    tri = ctrok[:ctrok.find('h')]
+    dva = ctrok[ctrok.find('h'): ctrok.rfind('h')]
+    raz = ctrok[ctrok.rfind('h') + 1:]
+    print(tri + dva[::-1] + raz)
 
-str(s)
+str(ctrok)

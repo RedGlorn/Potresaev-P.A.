@@ -1,8 +1,8 @@
 #-- coding: utf-8 --
-s = 'Строка для перестановки'
-def str(s):
-	a = s[:s.find(' ')]
-	sc = s[s.find(' ') + 1:]
-	print(sc + ' ' + a)
+ctrok = 'Строка для перестановки'
+def str(ctrok):
+	a = ctrok[:ctrok.find(' ')]
+	ctr = ctrok[ctrok.find(' ') + 1:]
+	print(ctr + ' ' + a)
 
-str(s)
+str(ctrok)

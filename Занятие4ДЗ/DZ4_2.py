@@ -1,7 +1,7 @@
 #-- coding: utf-8 --
-s = 'Строка с пробелами'
-def str(s):
-	print(s)
-	print(s.count(' ') + 1)
+ctrok = 'Строка с пробелами'
+def str(ctrok):
+	print(ctrok)
+	print(ctrok.count(' ') + 1)
     
-str(s)
+str(ctrok)
