@@ -77,17 +77,24 @@ def cl7():
     pred = int(scrtxt7_1.get())
     n = int(txt7.get())
     x = int(scrtxt7_2.get())
+    maxcount = int(scrtxt7_3.get())
     if n != 0:
         if n > pred:
             x += 1
             scrtxt7_2.delete(0,'end')
             scrtxt7_2.insert(0,x)
+        else:
+            if x > maxcount:
+                scrtxt7_3.delete(0,"end")
+                scrtxt7_3.insert(0,x)
+            scrtxt7_2.delete(0,"end")
+            scrtxt7_2.insert(0,"0")
         pred = n
         scrtxt7_1.delete(0,'end')
         scrtxt7_1.insert(0,pred)
     else:
         scrtxt7.delete(1.26,END)
-        scrtxt7.insert(INSERT,x)
+        scrtxt7.insert(INSERT,maxcount-1)
         scrtxt7_1.delete(0,'end')
         scrtxt7_2.delete(0,'end')
         scrtxt7_1.insert(0,"0")
@@ -222,7 +229,7 @@ scrtxt6_2.grid(column=2, row=4)
 scrtxt6_1.insert (INSERT,'0')
 scrtxt6_2.insert (INSERT,'0')
 
-#Шестая
+#Седьмая
 lb7 = Label(tab7, text="Введите число и нажмите на кнопку ", font=("Arial bold", 20)) 
 lb7.grid(column=0, row=0)
 txt7 = Entry(tab7, width=50)
@@ -238,8 +245,10 @@ scrtxt7_1.grid(column=1, row=4)
 scrtxt7_2.grid(column=2, row=4)
 scrtxt7_1.insert (INSERT,'0')
 scrtxt7_2.insert (INSERT,'0')
+scrtxt7_3 = Entry(tab7, width = 10)
+scrtxt7_3.insert(INSERT,"0")
 
-#Седьмая
+#Восьмая
 lb8 = Label(tab8, text="Введите число и нажмите на кнопку ", font=("Arial bold", 20)) 
 lb8.grid(column=0, row=0)
 txt8 = Entry(tab8, width=50)
