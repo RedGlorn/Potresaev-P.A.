@@ -5,13 +5,12 @@ from tkinter import scrolledtext
 
 def cl1():
     N = int(txt1.get())
-    i = 0
+    i = 1
     scrtxt1.delete(1.6,END)
-    while i <= N:
-        i = i**2
-        scrtxt1.insert(INSERT, i)
+    while i**2 <= N:
+        scrtxt1.insert(INSERT, i**2)
         scrtxt1.insert(INSERT, " ",)
-        i = i+1
+        i += 1
 
 def cl2():
     N = int(txt2.get())
@@ -36,10 +35,12 @@ def cl3():
 def cl4():
     x = int(txt4.get())
     y = int(txt4_1.get())
-    i = 1
-    while x < y:
+    i = 0
+    probeg=0
+    while probeg < y:
         x *= 1.1
         i += 1
+        probeg += x
     scrtxt4.delete(1.5,END)
     scrtxt4.insert(INSERT, i)
 
