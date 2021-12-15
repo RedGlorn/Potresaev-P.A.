@@ -1,6 +1,8 @@
 #-- coding: utf-8 --
-ctrok = 'Строка'
-def ctr(Ctrok):
+
+def ctr():	
+	print("ВВедите строку")
+	ctrok=input()    
 	print(ctrok[2])
 	print(ctrok[-2])
 	print(ctrok[0:5])
@@ -10,5 +12,5 @@ def ctr(Ctrok):
 	print(ctrok[::-1])
 	print(ctrok[::-2])
 	print(len(ctrok))
-    
-ctr(ctrok)
+
+ctr()

@@ -1,9 +1,11 @@
 #-- coding: utf-8 --
-ctrok = input('Введите строку ')
-simb = input('Введите символ который надо удалить ')
 
-def str(ctrok):
+def str():
+    print('Введите строку ')
+    ctrok = input()
+    print('Введите символ который надо удалить ')
+    simb = input()
     a = ctrok.replace(simb, '')
     print(a)
 
-str(ctrok)
+str()
