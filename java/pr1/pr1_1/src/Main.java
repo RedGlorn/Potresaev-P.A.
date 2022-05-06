@@ -1,4 +1,3 @@
-com.package
 import java.util.Scanner ;
 public class Main {
     public static void main(String[] args) {
@@ -10,3 +9,6 @@ public class Main {
 
     }
 }
+
+//Релизовать программу получающую на вход имя человека и выводящую
+//"Hello *имя человека* " или "Hello world" если имя не было введено.
