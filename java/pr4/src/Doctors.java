@@ -29,7 +29,7 @@ public class Doctors extends Stomatology{
     public int getWE() {return WE;}
 
     public String toString() {
-        return super.toString() + "\nНазвание отделения: " + BreName + "\nФИО Врача: " + DFIO
+        return  "\u001B[34m\nДоктор\u001B[0m " + "\nНазвание отделения: " + BreName + "\nФИО Врача: " + DFIO
                 + "\nДолжность: " + Post + "\nНаучное звание:" +ScTitle + "\nСтаж(лет): " + WE;
     }
 }

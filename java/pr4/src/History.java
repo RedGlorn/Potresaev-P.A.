@@ -35,7 +35,7 @@ public class History extends Stomatology {
     public String getDFIO() {return DoFIO;}
 
     public String toString() {
-        return super.toString() + "\nФИО пациента: " + PFIO + "\nПолис: " + NPol + "\nДата: " + Date
-                + "\nОказанные услуги: " + Work + "\nСумма услуг: " + Sum + "\nФИО врача: " + DoFIO;
+        return "\u001B[36m\nИстория\u001B[0m "+ "\nФИО пациента: " + PFIO + "\nПолис: " + NPol + "\nДата: " + Date
+                + "\nОказанные услуги: " + Work + "\nСумма услуг: " + Sum + "\nФИО врача: " + DoFIO + "\n";
     }
 }

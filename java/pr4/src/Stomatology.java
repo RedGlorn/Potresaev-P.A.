@@ -25,6 +25,6 @@ public class Stomatology {
 
 
     public String toString() {
-        return "\nБольница " + "\nНазвание:" + Name + "\nАдрес: " + Adress + "\nГород: " + City + "\nКоличество докторов: " + NumOfDocs;
+        return "\u001B[31m\nБольница\u001B[0m " + "\nНазвание:" + Name + "\nАдрес: " + Adress + "\nГород: " + City + "\nКоличество докторов: " + NumOfDocs;
     }
 }

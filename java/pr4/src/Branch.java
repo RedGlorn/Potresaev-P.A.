@@ -22,6 +22,6 @@ public class Branch extends  Stomatology{
 
 
     public String toString() {
-            return super.toString()+ "\nОтделение "+"\nНазвание отделения: " + BrName + "\nЭтаж: " + Floor +"\nФИО заведующего: " + FIOM;
+            return  "\u001B[33m\nОтделение\u001B[0m "+"\nНазвание отделения: " + BrName + "\nЭтаж: " + Floor +"\nФИО заведующего: " + FIOM;
     }
 }
